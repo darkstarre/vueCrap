@@ -21,6 +21,7 @@
 </template>
 
 <script>
+  //axios is bae
 import axios from 'axios';
 
   export default {

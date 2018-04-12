@@ -3,6 +3,9 @@
     <section class="hero">
       <div class="hero-body">
         <div class="container">
+          <div class="animation">
+            
+          </div>
           <h1 class="title">{{ heading }}</h1>
           <div class="is-two-thirds column is-paddingless">
             <h2 class="subtitle is-4">{{ subheading }}</h2>
@@ -89,7 +92,7 @@ export default {
 h2
   margin: 1.5rem 0 2rem 0 !important
 
-  .fa-cog
+  .fa-cog //this is not accepting new shit Y tho?
     font-size: 40px !important
     color: #00d1b2 !important
 
