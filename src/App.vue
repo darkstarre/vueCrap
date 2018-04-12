@@ -3,7 +3,7 @@
     <div class="nav has-shadow">
       <div class="container">
         <div class="nav-left">
-          <a class="nav-item">My Company</a>
+          <a class="nav-item">Megan Megan Bo Began</a>
         </div>
 
         <span class="nav-toggle" v-on:click="toggleNav" v-bind:class="{ 'is-active': isActive }">
@@ -15,8 +15,8 @@
         <div class="nav-right nav-menu" v-bind:class="{ 'is-active': isActive }">
 
           <router-link to="/" class="nav-item r-item">Home</router-link>
-          <router-link to="faq" class="nav-item r-item">Features</router-link>
-          <router-link to="faq" class="nav-item r-item">About</router-link>
+          <router-link to="features" class="nav-item r-item">Features</router-link>
+          <router-link to="about" class="nav-item r-item">About</router-link>
           <router-link to="faq" class="nav-item r-item">FAQ</router-link>
 
           <div class="nav-item">
@@ -93,7 +93,7 @@ a.r-item
   background-color: #c1c1c1
 
 footer
-  background-color: $primary !important
+  background-color: #63C6ef !important
   color: #fff
 
   .icon

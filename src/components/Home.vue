@@ -1,113 +1,104 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <ul>
-      <li>
-        <a
-          href="https://vuejs.org"
-          target="_blank"
-        >
-          Core Docs
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://forum.vuejs.org"
-          target="_blank"
-        >
-          Forum
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://chat.vuejs.org"
-          target="_blank"
-        >
-          Community Chat
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://twitter.com/vuejs"
-          target="_blank"
-        >
-          Twitter
-        </a>
-      </li>
-      <br>
-      <li>
-        <a
-          href="http://vuejs-templates.github.io/webpack/"
-          target="_blank"
-        >
-          Docs for This Template
-        </a>
-      </li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li>
-        <a
-          href="http://router.vuejs.org/"
-          target="_blank"
-        >
-          vue-router
-        </a>
-      </li>
-      <li>
-        <a
-          href="http://vuex.vuejs.org/"
-          target="_blank"
-        >
-          vuex
-        </a>
-      </li>
-      <li>
-        <a
-          href="http://vue-loader.vuejs.org/"
-          target="_blank"
-        >
-          vue-loader
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/awesome-vue"
-          target="_blank"
-        >
-          awesome-vue
-        </a>
-      </li>
-    </ul>
+  <div class="home">
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">{{ heading }}</h1>
+          <div class="is-two-thirds column is-paddingless">
+            <h2 class="subtitle is-4">{{ subheading }}</h2>
+          </div>
+          <router-link to="learn" class="button is-large is-primary" id="learn">Learn more</router-link>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="columns pd is-desktop">
+          <div class="column has-text-centered">
+            <i class="fa fa-cog is-primary"></i>
+          </div>
+          <div class="column is-one-third-desktop">
+            <p class="title"><strong>We provide superior logistics so that your business can succeed in a crazy world</strong></p>
+          </div>
+          <div class="column">
+            <p><strong>Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</strong></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns pd">
+        <div class="column">
+          <div class="card">
+            <div class="card-content">
+              <p class="title">"I think this is an excellent tool for our business. I can't survive without this thing."</p>
+              <p class="subtitle">- Joe Smaple</p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="card-content">
+              <p class="title">"I think this is an excellent tool for our business. I can't survive without this thing."</p>
+              <p class="subtitle">- Joe Smaple</p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="card-content">
+              <p class="title">"I think this is an excellent tool for our business. I can't survive without this thing."</p>
+              <p class="subtitle">- Joe Smaple</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'home',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      heading: 'Soaring to new Heights',
+      subheading: 'Omnia Gallia divisa im partes tres'
     }
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h1, h2 {
-  font-weight: normal;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+<style lang="sass" scoped>
+@import '../mq'
+
+.hero
+  background: url('../assets/mario-cloud-vectors.jpg')
+  background-size: cover
+
+  .title
+    +mobile
+      font-weight: bold
+    +tablet
+      font-size: 2.5rem
+    +desktop
+      font-size: 4rem
+      margin-top: 2rem
+
+h2
+  margin: 1.5rem 0 2rem 0 !important
+
+  .fa-cog
+    font-size: 40px !important
+    color: #00d1b2 !important
+
+  #learn
+    +desktop
+      margin-bottom: 2rem
+
+  .pd
+    +tablet
+      padding: 2em 0
+
 </style>
