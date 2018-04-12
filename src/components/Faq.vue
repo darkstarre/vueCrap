@@ -34,7 +34,7 @@ import axios from 'axios';
     created() {
       axios.get('http://jsonplaceholder.typicode.com/posts')
         .then(response => {
-          this.faqs = response.data.slice(0,10);
+          this.faqs = response.data.slice(0,10); //theres like a million
         })
         .catch(e => {
           this.errors.push(e)

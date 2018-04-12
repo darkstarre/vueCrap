@@ -93,8 +93,8 @@ h2
   margin: 1.5rem 0 2rem 0 !important
 
   .fa-cog //this is not accepting new shit Y tho?
-    font-size: 40px !important
-    color: #00d1b2 !important
+    color: #00D1B2 !important
+    float: left !important
 
   #learn
     +desktop
