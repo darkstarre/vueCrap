@@ -1,7 +1,6 @@
 # vue-budget
 
-> a simple budgeting app
-
+> boring app that does boring stuff
 ## Build Setup
 
 ``` bash
